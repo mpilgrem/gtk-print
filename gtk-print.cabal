@@ -1,4 +1,4 @@
-cabal-version: 1.12
+cabal-version: 2.2
 
 -- This file has been generated from package.yaml by hpack version 0.37.0.
 --
@@ -6,15 +6,28 @@ cabal-version: 1.12
 
 name:           gtk-print
 version:        0.1.0.0
-license:        BSD3
+description:    Please see the README on GitHub at <https://github.com/mpilgrem/gtk-print#readme>
+homepage:       https://github.com/mpilgrem/gtk-print#readme
+bug-reports:    https://github.com/mpilgrem/gtk-print/issues
+author:         Mike Pilgrem
+maintainer:     public@pilgrem.com
+copyright:      2024 Mike Pilgrem
+license:        BSD-3-Clause
 license-file:   LICENSE
 build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/mpilgrem/gtk-print
 
 executable gtk-print
   main-is: Main.hs
   hs-source-dirs:
       app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
     , gi-gtk >=4.0
