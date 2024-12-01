@@ -1,0 +1,5 @@
+snapshot: lts-22.43 # GHC 9.6.6
+extra-deps:
+- gi-gdk-4.0.9
+- gi-gsk-4.0.8
+- gi-gtk-4.0.9
