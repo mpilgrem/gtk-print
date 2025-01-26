@@ -1,11 +1,11 @@
 spec-version:        0.36.0
 name:                gtk-print
-version:             0.1.0.0
+version:             0.1.1.0
 github:              "mpilgrem/gtk-print"
 license:             BSD-3-Clause
 author:              "Mike Pilgrem"
 maintainer:          "public@pilgrem.com"
-copyright:           "2024 Mike Pilgrem"
+copyright:           "2025 Mike Pilgrem"
 
 extra-source-files:
 - README.md
@@ -15,8 +15,14 @@ description:         Please see the README on GitHub at <https://github.com/mpil
 
 dependencies:
 - base >= 4.7 && < 5
+- gi-cairo
+- gi-cairo-connector
+- gi-cairo-render
 - gi-gtk >= 4.0
+- gi-pango
+- gi-pangocairo
 - haskell-gi-base
+- text
 
 ghc-options:
 - -Wall

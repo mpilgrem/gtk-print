@@ -1,5 +1,10 @@
-snapshot: lts-22.43 # GHC 9.6.6
+snapshot: lts-23.5 # GHC 9.8.4
+
 extra-deps:
-- gi-gdk-4.0.9
-- gi-gsk-4.0.8
-- gi-gtk-4.0.9
+- gi-cairo-connector-0.1.1
+- gi-gdk-4.0.10
+- gi-gdk4-4.0.10
+- gi-gsk-4.0.9
+- gi-gtk-4.0.12@rev:0
+- gi-gtk4-4.0.12
+- gi-pangocairo-1.0.31
